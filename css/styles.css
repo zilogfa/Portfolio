@@ -1,5 +1,5 @@
 body {
-  background-color: #323232;
+  background-image: linear-gradient(to top right, #ffffff, #f0f0f0);
   color: #fff;
 }
 
@@ -16,40 +16,13 @@ h5 {
   font-size: 0.6rem;
 }
 
-
-
-
-
 .section {
-
   min-height: 100vh;
   padding: 10%;
 }
 
 
-#header {
-
-  min-height: 100vh;
-  color: #323232;
-}
-
-.header-txt {
-  font-size: 9rem;
-  font-weight: 700;
-}
-
-.heading {
-    background-color: #fff;
-    font-weight: bold;
-    font-weight: 700;
-    font-family:sans-serif;
-}
-
-.headig-txt-position {
-  margin-left: 12%;
-}
-
-
+/* ________ NAVBAR SIDE ------------ */
 div.bar {
 text-align: center;
 position: fixed;
@@ -88,8 +61,8 @@ z-index: +1;
 .aboutBar{
   background-image: linear-gradient(to bottom right, #FBD46D , #F0A500);
   height: 95px;
-    color: #323232;
-    transition: width 0.1s, height 0.2s, transform 0.2s;
+  color: #323232;
+  transition: width 0.1s, height 0.2s, transform 0.2s;
 
 }
 
@@ -140,6 +113,7 @@ z-index: +1;
 
 /*----------- ANIMATION SECTION */
 
+
 .hidden {
   opacity: 0;
   filter: blur(5px);
@@ -152,6 +126,160 @@ z-index: +1;
   filter: blur(0);
   transform: translateX(0);
 }
+
+
+/* VISIT CARD ----------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+a {
+  text-decoration: none;
+}
+
+
+
+.card {
+  background-image: linear-gradient(to top right, #000, #727272);
+  background-size: cover;
+  min-width: 400px;
+  min-height: 250px;
+  margin: auto;
+  padding: 40px;
+  position: relative;
+  color: #d6d6d6;
+  transition: transform 0.1s ease;
+  transform-style: preserve-3d;
+  will-change: transform;
+  border-radius: 25px;
+  box-shadow: 0px 5px 10px #00000033;
+
+
+}
+
+.card::before {
+  content: "";
+  background: #18181866;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 25px;
+
+}
+
+
+
+/* Slight parallax effect on hover */
+.card:hover .content {
+  transform: translateZ(12px);
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+/* Demo only */
+.container {
+  margin-top: 100px;
+}
+
+.photo-cred {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+
+/* ----------- CONTENT--------------- */
+
+
+
+.heading{
+
+  
+  color:#323232;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.title-title {
+
+}
+
+.title-h1 {
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+.title-subtitle{
+  color: #929292;
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+
+
+.card-size {
+  max-width: 100px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30px;
+
+}
+
+.flex-item-left {
+  padding: 10px;
+  padding-left: 10%;
+  flex: 50%;
+}
+
+.flex-item-right {
+  padding: 10px;
+  flex: 50%;
+}
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 900px) {
+  .flex-item-right, .flex-item-left {
+    flex: 100%;
+    padding-left: 15%;
+  }
+
+  .flex-item-right {
+    max-width: 100px;
+  }
+
+
+  .title-h1 {
+    font-size: 3rem;
+  }
+
+  .title-subtitle{
+    font-size: 1.1rem;
+  }
+  
+  .card-size {
+    scale: 90%;
+  }
+  
+
+}
+
 
 
 
@@ -237,86 +365,3 @@ footer{
 
 
 
-/* BOX HEADER ----------------- */
-
-* {
-  box-sizing: border-box;
-}
-
-
-p {
-  margin-top: 0;
-  font-size: 20px;
-}
-
-a {
-  text-decoration: none;
-}
-
-h2 {
-  font-size: 42px;
-  margin-bottom: 15px;
-}
-
-button {
-  background: #e85757;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  display: block;
-  font-size: 18px;
-  font-weight: 700;
-  padding: 16px;
-  width: 120px;
-  color: #fff;
-}
-
-.card {
-  background-image: linear-gradient(to top right, rgb(98, 0, 255) , rgb(23, 170, 255));
-  background-size: cover;
-  max-width: 400px;
-  margin: auto;
-  height: 400px;
-  padding: 40px;
-  position: relative;
-  color: #fff;
-  transition: transform 0.1s ease;
-  transform-style: preserve-3d;
-  will-change: transform;
-  border-radius: 25px;
-}
-
-.card::before {
-  content: "";
-  background: #e6e6e666;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  border-radius: 25px;
-}
-
-/* Slight parallax effect on hover */
-.card:hover .content {
-  transform: translateZ(12px);
-}
-
-.content {
-  position: relative;
-  z-index: 1;
-  transition: transform 0.3s ease;
-}
-
-/* Demo only */
-.container {
-  margin-top: 100px;
-}
-
-.photo-cred {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-}
