@@ -17,7 +17,7 @@ hiddenelements.forEach((el) => observer.observe(el));
 
 // --------------------------- CARD MOVEMENT
 
-const card = document.querySelector(".card");
+const card = document.querySelector(".cardvisit");
 const motionMatchMedia = window.matchMedia("(prefers-reduced-motion)");
 const THRESHOLD = 15;
 

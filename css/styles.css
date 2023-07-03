@@ -12,9 +12,6 @@ a:hover{
   color: #EAF6F6;
 }
 
-h5 {
-  font-size: 0.6rem;
-}
 
 .section {
   min-height: 100vh;
@@ -22,96 +19,8 @@ h5 {
 }
 
 
-/* ________ NAVBAR SIDE ------------ */
-div.bar {
-text-align: center;
-position: fixed;
-margin-top: 15%;
-margin-left: 1.5%;
-width: 70px;
 
-opacity: 95%;
-Border-radius: 10px;
-z-index: +1;
-}
-
-.cBar:nth-child(1) {
-  margin-top: 6%;
-  margin-left: 5%;
-  padding: 10%;
-  position: relative;
-  width: 65px;
-
-  Border-radius: 10px;
-
-
-  z-index: auto;
-}
-.profilePic{
-  align-items: center;
-    height:45px;
-    width:45px;
-    Border-radius: 100%;
-}
-.cBar:nth-child(2) {}
-.cBar:nth-child(3) {}
-.cBar:nth-child(4) {}
-.cBar:nth-child(5) {}
-
-.aboutBar{
-  background-image: linear-gradient(to bottom right, #FBD46D , #F0A500);
-  height: 95px;
-  color: #323232;
-  transition: width 0.1s, height 0.2s, transform 0.2s;
-
-}
-
-.aboutTxt {
-  padding-top: 30%;
-  font-weight: bold;
-
-}
-
-.sec1Bar{
-  background-color: #393E46;
-  height: 65px;
-  transition: width 0.1s;
-
-
-}
-
-.sec2Bar{
-  background-color: #393E46;
-  height: 65px;
-    transition: width 0.1s;
-}
-
-.sec3Bar{
-  background-color: #393E46;
-  height: 65px;
-    transition: width 0.1s;
-}
-
-.sec4Bar{
-  background-color: #393E46;
-  height: 65px;
-    transition: width 0.1s;
-}
-.sec5Bar{
-  background-color: #393E46;
-  height: 65px;
-    transition: width 0.1s;
-}
-
-
-.cBar:hover {
-  width: 70px;
-  margin-left: 8%;
-  background-image: linear-gradient(to bottom left, rgb(35, 185, 231) ,rgb(66, 211, 255));
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-/*----------- ANIMATION SECTION */
+/*----------- Page ANIMATION SECTION */
 
 
 .hidden {
@@ -128,22 +37,118 @@ z-index: +1;
 }
 
 
+.logos {
+  display: fix;
+}
+
+.logo:nth-child(2){
+  transition-delay: 200ms;
+}
+
+.logo:nth-child(3){
+  transition-delay: 400ms;
+}
+
+.logo:nth-child(4){
+  transition-delay: 600ms;
+}
+
+.logo:nth-child(5){
+  transition-delay: 800ms;
+}
+
+.logo:nth-child(6){
+  transition-delay: 1000ms;
+}
+
+.logo:nth-child(7){
+  transition-delay: 1200ms;
+}
+
+
+
+
+/* ________ SIDE NAVBAR ------------ */
+
+.cBar h5{
+  font-size: 0.6rem;
+}
+
+.bar {
+text-align: center;
+position: fixed;
+margin-top: 13%;
+margin-left: 1.5%;
+width: 70px;
+opacity: 95%;
+Border-radius: 10px;
+z-index: +1;
+}
+
+.cBar:nth-child(1) {
+  margin-top: 6%;
+  margin-left: 5%;
+  padding: 10%;
+  position: relative;
+  width: 65px;
+  Border-radius: 10px;
+  z-index: auto;
+  box-shadow: 0px 5px 10px #00000033;
+  height: auto;
+  min-height: 65px;
+  transition: width 0.1s;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profilePic{
+    height:45px;
+    width:45px;
+    Border-radius: 100%;
+    box-shadow: 0px 3px 5px #00000033;
+    border: 2px solid #ffffff33;
+}
+.cBar:nth-child(2) {}
+.cBar:nth-child(3) {}
+.cBar:nth-child(4) {}
+.cBar:nth-child(5) {}
+
+.cBar{
+  background-image: linear-gradient(to bottom left, #b4b4b4 ,#bdbcbb);
+}
+
+.aboutBar{
+  background-image: linear-gradient(to bottom right, #FBD46D , #F0A500);
+  height: 150px;
+  transition: width 0.1s, height 0.2s, transform 0.2s;
+}
+
+.aboutTxt {
+  padding-top: 30%;
+  font-weight: bold;
+}
+
+.cBar:hover {
+  width: 70px;
+  margin-left: 8%;
+  background-image: linear-gradient(to bottom left, rgb(238, 172, 74) ,rgb(255, 79, 66));
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
 /* VISIT CARD ----------------- */
 
 * {
   box-sizing: border-box;
 }
 
-
-
-
 a {
   text-decoration: none;
 }
 
-
-
-.card {
+.cardvisit {
   background-image: linear-gradient(to top right, #000, #727272);
   background-size: cover;
   min-width: 400px;
@@ -157,11 +162,9 @@ a {
   will-change: transform;
   border-radius: 25px;
   box-shadow: 0px 5px 10px #00000033;
-
-
 }
 
-.card::before {
+.cardvisit::before {
   content: "";
   background: #18181866;
   position: absolute;
@@ -176,9 +179,8 @@ a {
 }
 
 
-
 /* Slight parallax effect on hover */
-.card:hover .content {
+.cardvisit:hover .content {
   transform: translateZ(12px);
 }
 
@@ -202,11 +204,9 @@ a {
 
 /* ----------- CONTENT--------------- */
 
+/* ||||||||| HEADING SECTION |||||||||||||||||||*/
 
-
-.heading{
-
-  
+.heading{  
   color:#323232;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -226,20 +226,16 @@ a {
   margin-bottom: 15px;
 }
 
-
 .card-size {
   max-width: 100px;
   font-family: 'Courier New', Courier, monospace;
 }
 
 
-
-
 .flex-container {
   display: flex;
   flex-wrap: wrap;
   font-size: 30px;
-
 }
 
 .flex-item-left {
@@ -252,43 +248,104 @@ a {
   padding: 10px;
   flex: 50%;
 }
-
-/* Responsive layout - makes a one column-layout instead of a two-column layout */
-@media (max-width: 900px) {
-  .flex-item-right, .flex-item-left {
-    flex: 100%;
-    padding-left: 15%;
-  }
-
-  .flex-item-right {
-    max-width: 100px;
-  }
-
-
-  .title-h1 {
-    font-size: 3rem;
-  }
-
-  .title-subtitle{
-    font-size: 1.1rem;
-  }
-  
-  .card-size {
-    scale: 90%;
-  }
-  
-
-}
+/* reposive for @Media 900px code is in below */
 
 
 
 
 
-#sec1 {
+
+
+/* FULLSTACK SECTION |||||||||||||||||||||||| */
+.content-section {
   display: grid;
-  place-items: center;
-  align-content: center;
 }
+
+.fullstack-sec {
+  width: auto;
+}
+
+.intro{ 
+  margin-bottom: auto;
+}
+
+.intro h1{
+  font-weight: bolder;
+  font-size: 72px;
+  background: -webkit-linear-gradient(#ff7b00, #ff3300);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.flex-main {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 30px;
+  font-size: 30px;
+  text-align: center;
+  background-color: #fff;
+  gap:10px;
+  padding: 10px;
+  border-radius: 14px;
+  box-shadow: 2px 3px 50px #00000033;
+}
+
+.flex-left{
+  padding: 10px;
+}
+
+.flex-left img{
+  max-height: 300px;
+}
+
+
+.flex-center{
+  text-align: left;
+  margin-top: 10px;
+}
+
+.flex-center h1 {
+  font-size: 0.9em;
+  font-weight: 900;
+  right: 10px;
+}
+
+.flex-center h3 {
+  font-size: 0.6em;
+  margin-bottom: 30px;
+}
+
+.flex-center p {
+  font-size: 0.4em;;
+}
+
+.flex-right{
+padding: 10px;
+}
+
+.flex-right a{
+  width: 200px;
+  box-shadow: 0 5px 10px #00000033;
+}
+
+
+
+
+
+.appCard{
+  box-shadow: 0 5px 10px #3d3d3d33;
+  border-radius: 15px;
+}
+
+
+
+
+
+
+
+
 
 #sec2 {
   display: grid;
@@ -324,27 +381,6 @@ childs: <div class="logos hidden">
 
 
 
-.logos {
-  display: fix;
-}
-
-.logo:nth-child(2){
-  transition-delay: 200ms;
-}
-
-.logo:nth-child(3){
-  transition-delay: 400ms;
-}
-
-.logo:nth-child(4){
-  transition-delay: 600ms;
-}
-
-.logo:nth-child(5){
-  transition-delay: 800ms;
-}
-
-
 
 
 
@@ -361,7 +397,53 @@ footer{
 
 
 
+/* ||||||||||||||||||||||||||||| */
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 900px) {
+  .flex-item-right, .flex-item-left {
+    flex: 100%;
+    padding-left: 15%;
+  }
+
+  .flex-item-right {
+    max-width: 100px;
+  }
 
 
+  .title-h1 {
+    font-size: 3rem;
+  }
+
+  .title-subtitle{
+    font-size: 1.1rem;
+  }
+  
+  .card-size {
+    scale: 90%;
+  }
+  
+
+/* side NavBar Size */
+  .bar{
+    scale: 80%;
+    margin-left: 0.1%;
+  }
+
+  #fullstack {
+    margin-left: 10%;
+  }
+
+  .flex-main{
+    flex-direction: column;
+  }
+
+}
+
+
+
+
+
+/*||||||||||||||||||||||||||||||||||||||||
+||||||||||||||||||||||||||||||||||||||||*/
 
 
