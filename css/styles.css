@@ -304,6 +304,8 @@ a {
   -webkit-text-fill-color: transparent;
 }
 
+
+
 .intro p {
   color: #727272;
 }
@@ -419,16 +421,18 @@ a {
 }
 
 
-
-
-
-
-
-#sec3 {
-  display: grid;
-  place-items: center;
-  align-content: center;
+.game-title{
+  background: -webkit-linear-gradient(#00ff6a, #eff535);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
+
+
+
+
+
+
 
 #sec4 {
   display: grid;
@@ -514,7 +518,7 @@ footer{
     margin-left: 0.1%;
   }
 
-  #fullstack, #api {
+  #fullstack, #api, #game {
     margin-left: 5%;
   }
 
