@@ -37,6 +37,8 @@ a:hover{
 }
 
 
+
+
 .logos {
   display: fix;
 }
@@ -79,7 +81,7 @@ text-align: center;
 position: fixed;
 margin-top: 13%;
 margin-left: 1.5%;
-width: 70px;
+width: 65px;
 opacity: 95%;
 Border-radius: 10px;
 z-index: +1;
@@ -117,17 +119,16 @@ z-index: +1;
 
 .cBar{
   background-image: linear-gradient(to bottom left, #b4b4b4 ,#bdbcbb);
+  transition: 200ms;
 }
 
 .aboutBar{
   background-image: linear-gradient(to bottom right, #FBD46D , #F0A500);
-  height: 150px;
-  transition: width 0.1s, height 0.2s, transform 0.2s;
 }
 
 .aboutTxt {
   padding-top: 30%;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .cBar:hover {
@@ -135,6 +136,17 @@ z-index: +1;
   margin-left: 8%;
   background-image: linear-gradient(to bottom left, rgb(238, 172, 74) ,rgb(255, 79, 66));
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 400ms;
+}
+
+
+
+
+
+/* HEADER */
+
+#header{
+
 }
 
 
@@ -146,6 +158,10 @@ z-index: +1;
 
 a {
   text-decoration: none;
+}
+
+.flex-item-right{
+  margin-top: 10%;
 }
 
 .cardvisit {
@@ -213,6 +229,8 @@ a {
 
 .title-title {
 
+  margin-top: 30%;
+
 }
 
 .title-h1 {
@@ -272,57 +290,104 @@ a {
 .intro h1{
   font-weight: bolder;
   font-size: 72px;
+}
+
+.fullstack-title{
   background: -webkit-linear-gradient(#ff7b00, #ff3300);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+.intro h3{
+  background: -webkit-linear-gradient(#767c86, #a3a3a3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.intro p {
+  color: #727272;
+}
+
+
+/* flesk-Box */
 
 .flex-main {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   flex-direction: row;
   margin-top: 30px;
   font-size: 30px;
   text-align: center;
   background-color: #fff;
-  gap:10px;
-  padding: 10px;
+  gap:30px;
+  padding: 20px;
   border-radius: 14px;
   box-shadow: 2px 3px 50px #00000033;
 }
 
 .flex-left{
-  padding: 10px;
+  flex: 40%;
+
+}
+
+.appCard{
+
 }
 
 .flex-left img{
-  max-height: 300px;
+  max-height: 500px;
+  max-width: 500px;
 }
 
 
+
 .flex-center{
+  flex: 40%;
   text-align: left;
   margin-top: 10px;
 }
 
 .flex-center h1 {
-  font-size: 0.9em;
+  font-size: 1.4em;
   font-weight: 900;
   right: 10px;
 }
 
 .flex-center h3 {
+  color: #414141;
   font-size: 0.6em;
   margin-bottom: 30px;
+  
 }
 
 .flex-center p {
+  color: #727272;
   font-size: 0.4em;;
 }
 
+.flex-center h4 {
+  font-size: 0.4em;
+}
+
+.icon img {
+  height: 26px;
+  transition: 200ms;
+}
+
+.icon img:hover {
+  height: 40px;
+  filter: drop-shadow(0 4px 3px #00000033);
+  transition: 500ms;
+}
+
+
+
+
 .flex-right{
-padding: 10px;
+  justify-content: center;
+  align-items: center;
+  flex: 10%;
 }
 
 .flex-right a{
@@ -334,9 +399,23 @@ padding: 10px;
 
 
 
-.appCard{
-  box-shadow: 0 5px 10px #3d3d3d33;
-  border-radius: 15px;
+
+
+
+
+
+
+
+/* API SECTION ------------ */
+
+#api {
+
+}
+
+.api-title {
+  background: -webkit-linear-gradient(#68a2ff, #7751ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 
@@ -344,14 +423,6 @@ padding: 10px;
 
 
 
-
-
-
-#sec2 {
-  display: grid;
-  place-items: center;
-  align-content: center;
-}
 
 #sec3 {
   display: grid;
@@ -399,7 +470,21 @@ footer{
 
 /* ||||||||||||||||||||||||||||| */
 /* Responsive layout - makes a one column-layout instead of a two-column layout */
-@media (max-width: 900px) {
+
+/* @media (max-width: 1350px){
+
+.flex-left img{
+  max-height: 300px;
+  max-width: 300px;
+}
+
+.flex-main {
+  gap:18px;
+
+}
+} */
+
+@media (max-width: 961px) {
   .flex-item-right, .flex-item-left {
     flex: 100%;
     padding-left: 15%;
@@ -429,12 +514,17 @@ footer{
     margin-left: 0.1%;
   }
 
-  #fullstack {
-    margin-left: 10%;
+  #fullstack, #api {
+    margin-left: 5%;
   }
 
   .flex-main{
     flex-direction: column;
+  }
+
+  .flex-left img{
+    max-height: 400px;
+    max-width: 400px;
   }
 
 }
