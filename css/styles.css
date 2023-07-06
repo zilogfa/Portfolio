@@ -242,11 +242,13 @@ a {
   color: #929292;
   font-size: 1.7rem;
   margin-bottom: 0px;
+  text-shadow: 3px 10px 7px #00000033;
 }
 
 .title-title h6 {
   color: #929292;
   font-size: 1.3rem;
+  text-shadow: 3px 10px 7px #00000033;
 }
 
 .card-size {
