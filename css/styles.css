@@ -143,12 +143,8 @@ z-index: +1;
 
 
 
-/* HEADER */
 
-#header{
-
-}
-
+/* ||||||||| HEADING SECTION |||||||||||||||||||*/
 
 /* VISIT CARD ----------------- */
 
@@ -218,9 +214,8 @@ a {
 }
 
 
-/* ----------- CONTENT--------------- */
 
-/* ||||||||| HEADING SECTION |||||||||||||||||||*/
+/* ||||||||| HELLO I'm Ali |||||||||||||||||||*/
 
 .heading{  
   color:#323232;
@@ -229,7 +224,7 @@ a {
 
 .title-title {
 
-  margin-top: 24%;
+  margin-top: 10%;
 
 }
 
@@ -239,16 +234,51 @@ a {
 }
 
 .title-subtitle{
-  color: #929292;
+  color: #595959;
   font-size: 1.7rem;
-  margin-bottom: 0px;
-  text-shadow: 3px 10px 7px #00000033;
+  margin-bottom: 2px;
 }
 
 .title-title h6 {
   color: #929292;
   font-size: 1.3rem;
-  text-shadow: 3px 10px 7px #00000033;
+  margin-bottom: 40px;
+}
+
+.title-icon-main{
+  margin-bottom: 20px;
+}
+
+.title-icon-main img {
+  height: 40px;
+  opacity: 0.9;
+  transition: 100ms;
+}
+
+
+.title-icon-main img:hover {
+  /* height: 48px; */
+  opacity: 1;
+  transition: 500ms;
+  /* filter: drop-shadow(0 4px 3px #a6a6a633); */
+}
+
+.title-icon img {
+  height: 24px;
+   /* Safari 6.0 - 9.0 */
+  /* -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); */
+  opacity: 0.9;
+  transition: 200ms;
+}
+
+.title-icon img:hover {
+/* Safari 6.0 - 9.0 */
+  /* -webkit-filter: grayscale(0%); 
+  filter: grayscale(0%); */
+  opacity: 1;
+  height: 40px;
+  transition: 400ms;
 }
 
 .card-size {
@@ -278,6 +308,8 @@ a {
 
 
 
+
+/* ----------- CONTENT--------------- */
 
 
 /* FULLSTACK SECTION |||||||||||||||||||||||| */
@@ -520,6 +552,12 @@ footer{
   .title-subtitle{
     font-size: 1.1rem;
   }
+
+  .title-title h6 {
+    margin-top: 8px;
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+  }
   
   .card-size {
     scale: 90%;
@@ -553,5 +591,11 @@ footer{
 
 /*||||||||||||||||||||||||||||||||||||||||
 ||||||||||||||||||||||||||||||||||||||||*/
+
+
+
+
+
+/* ----------- STAR ----------- */
 
 
