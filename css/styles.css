@@ -229,7 +229,7 @@ a {
 
 .title-title {
 
-  margin-top: 30%;
+  margin-top: 24%;
 
 }
 
@@ -240,8 +240,13 @@ a {
 
 .title-subtitle{
   color: #929292;
-  font-size: 1.6rem;
-  margin-bottom: 15px;
+  font-size: 1.7rem;
+  margin-bottom: 0px;
+}
+
+.title-title h6 {
+  color: #929292;
+  font-size: 1.3rem;
 }
 
 .card-size {
@@ -267,7 +272,6 @@ a {
   flex: 50%;
 }
 /* reposive for @Media 900px code is in below */
-
 
 
 
