@@ -428,13 +428,19 @@ a {
 }
 
 
+.gui-title{
+  background: -webkit-linear-gradient(#ff1f1f, #ff6f6f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 
 
 
 
 
-#sec4 {
+
+/* #sec4 {
   display: grid;
   place-items: center;
   align-content: center;
@@ -444,7 +450,7 @@ a {
   display: grid;
   place-items: center;
   align-content: center;
-}
+} */
 /* To Get Animation
 Inside <Section>
 First Parent <div class="logos">
@@ -465,7 +471,9 @@ footer{
   text-align: center;
   padding: 100px;
   background-color: #333333;
+  color: #c8c8c8;
   font-family: sans-serif;
+  height: 50%;
 }
 
 
